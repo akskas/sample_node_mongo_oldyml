@@ -21,6 +21,7 @@ describe("Persistence", function () {
           console.log('e: ', e);
         (e === null).should.equal(true);
         var response = res.body;
+            console.log('res.body: ', res.body);
         expect(response.created).to.equal(true);
         done();
       });
